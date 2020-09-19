@@ -9,17 +9,16 @@ router.get('/', (_req, res) => {
   res.send(postings);
 });
 router.get('/:id', (req, res) => {
-  const posting = getJobPosting(req.params.id);
-  res.send(posting);
+  // const posting = getJobPosting(req.params.id);
+  // res.send(posting);
 });
 router.post('/', (_req, res) => {
-  const postCreated = createJobPosting();
-
-  if (postCreated) {
-    res.sendStatus(200);
-  } else {
-    res.sendStatus(504);
-  }
+  // const postCreated = createJobPosting();
+  // if (postCreated) {
+  //   res.sendStatus(200);
+  // } else {
+  //   res.sendStatus(504);
+  // }
 });
 
 export default router;
