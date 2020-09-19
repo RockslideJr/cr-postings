@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node -r dotenv/config build/index",
+    "start:dev": "nodemon --exec yarn ts-node -r dotenv/config src/index.ts",
     "lint": "eslint **/*.ts"
   },
   "dependencies": {
@@ -21,8 +22,10 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "ts-jest": "^26.3.0",
+    "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   }
 }
