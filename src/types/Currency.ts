@@ -1,6 +1,8 @@
 interface Currency {
-  units: 'USD';
+  units: typeof unitOptions[number];
   amount: number;
 }
+
+export const unitOptions = ['USD'] as const;
 
 export default Currency;
