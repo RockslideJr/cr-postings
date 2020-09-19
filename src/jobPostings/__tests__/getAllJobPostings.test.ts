@@ -3,12 +3,13 @@ import getAllJobPostings from '../getAllJobPostings';
 import jobPostings from '../jobPostings';
 
 beforeEach(() => {
-  jobPostings.slice(0, 0);
+  jobPostings.splice(0, jobPostings.length);
 });
 
 describe('getAllJobPostings', () => {
   it('returns all existing job postings', () => {
     const postingOne: JobPosting = {
+      id: 1,
       company: 'Hogwarts',
       title: 'Grounds Keeper',
       salary: {
@@ -17,6 +18,7 @@ describe('getAllJobPostings', () => {
       },
     };
     const postingTwo: JobPosting = {
+      id: 2,
       company: 'Hogwarts',
       title: 'HeadMaster',
       salary: {
