@@ -1,6 +1,6 @@
-import JobPosting from '../../types/JobPosting';
+import JobPosting from '../../../types/JobPosting';
+import jobPostings from '../../jobPostings';
 import createJobPosting from '../createJobPosting';
-import jobPostings from '../jobPostings';
 
 describe('createJobPosting', () => {
   const validParams: JobPosting = {

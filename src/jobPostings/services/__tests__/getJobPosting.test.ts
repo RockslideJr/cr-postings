@@ -1,6 +1,6 @@
-import JobPosting from '../../types/JobPosting';
+import JobPosting from '../../../types/JobPosting';
+import jobPostings from '../../jobPostings';
 import getJobPosting from '../getJobPosting';
-import jobPostings from '../jobPostings';
 
 beforeEach(() => {
   jobPostings.splice(0, jobPostings.length);

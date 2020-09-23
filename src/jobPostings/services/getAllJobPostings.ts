@@ -1,5 +1,5 @@
-import JobPosting from '../types/JobPosting';
-import jobPostings from './jobPostings';
+import JobPosting from '../../types/JobPosting';
+import jobPostings from '../jobPostings';
 
 const getAllJobPostings = (): JobPosting[] => {
   return jobPostings;
